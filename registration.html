@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration | Aliyu Awwal</title>
+    <meta name="description" content="Registration for Aliyu Awwal's portfolio and contact information.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="forms.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Portfolio header">
+      <a class="brand" href="index.html#top" aria-label="Aliyu Awwal home">
+        <img src="assets/gaminglogo.png" alt="calmadini logo">
+        <span>Aliyu Awwal</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#themes">Themes</a>
+        <a href="index.html#venue">Venue</a>
+        <a href="registration.html">Registration</a>
+        <a href="index.html#partners">Partners</a>
+      </nav>
+      <a class="header-cta" href="contact.html">Contact</a>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Registration</p>
+        <h1>Register your interest</h1>
+        <p>
+          Please, complete the short form below. We will follow up with further details.
+        </p>
+      </section>
+
+      <section class="form-layout">
+        <aside class="fee-panel" aria-labelledby="fees-title">
+          <p class="section-kicker">Fees</p>
+          <h2 id="fees-title">Registration fees</h2>
+          <div class="fee-list">
+           
+            <div>
+              <span>Potential Employers</span>
+              <strong>0 EUR</strong>
+            </div>
+             <div>
+              <span>Students and researchers</span>
+              <strong>Free</strong>
+            </div>
+            <div>
+              <span>Senior professionals & Colleagues</span>
+              <strong>0 EUR</strong>
+            </div>
+            <div>
+              <span>Partners & Collaborators</span>
+              <strong>0 EUR</strong>
+            </div>
+            <div>
+              <span>Other</span>
+              <strong>Contact for details</strong>
+            </div>
+          </div>
+          <p class="small-note">
+            Fees are concise planning figures and may be confirmed by the team before payment.
+          </p>
+        </aside>
+
+        <form class="data-form" data-form-type="registration">
+          <div class="form-row">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row two-columns">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div>
+              <label for="affiliation">Affiliation/Institution/Company</label>
+              <input id="affiliation" name="affiliation" type="text" required>
+            </div>
+          </div>
+          <div class="form-row two-columns">
+            <div>
+              <label for="category">Registration category</label>
+              <select id="category" name="category" required>
+                <option value="">Select category</option>
+                <option value="Potential employer - 50 EUR">Potential employer - 0 EUR</option>
+                <option value="Student or research assistant - free">Student or research assistant - free</option>
+                <option value="Senior professional or colleague - 200 EUR">Senior professional or colleague - 0 EUR</option>
+                <option value="Partner or collaborator - free">Partner or collaborator - 0 EUR</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="purpose">Purpose of Registration</label>
+              <select id="purpose" name="purpose" required>
+                <option value="">Select type</option>
+                <option>Talk</option>
+                <option>Invitation</option>
+                <option>Collaboration</option>
+                <option>Undecided</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="title">Title of Purpose (if applicable)</label>
+            <input id="title" name="title" type="text">
+          </div>
+          <div class="form-row two-columns">
+            <div>
+              <label for="registrationFile">Invitation, Contact Information, or Proposal</label>
+              <input id="registrationFile" name="registrationFile" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx">
+              <p class="field-help">Attach your invitation, contact information, or proposal file.</p>
+            </div>
+            <div>
+              <label for="evidenceFile">Evidence of Job Offer/ Proposal/ Payment or Initial Contact</label>
+              <input id="evidenceFile" name="evidenceFile" type="file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+              <p class="field-help">Proof of Job Offer/ Proposal/ Payment or Initial Contact.</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="particular needs, requirements, or questions"></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="button primary" type="submit">Submit registration</button>
+            <a class="button secondary" href="contact.html">Send inquiries</a>
+          </div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="assets/gaminglogo.png" alt="calmadini logo">
+        <p>Enterprise  Infrastructure Engineer | All-Rounder</p>
+      </div>
+      <a href="mailto:aliyu.doas@gmail.com"><img src="assets/qrcodeemail.png" alt="Email QR code"></a>
+      <a href="https://www.linkedin.com/in/aliyuawwal"><img src="assets/qrcodelinkedin.png" alt="LinkedIn QR code"></a>
+      <a href="https://github.com/aliyuawwal"><img src="assets/qrcodegithub.png" alt="GitHub QR code"></a>
+      <a href="tel:+1234567890"><img src="assets/qrcodephone.png" alt="Phone QR code"></a>
+
+      <div><p>&copy; 2026 Aliyu Awwal. All rights reserved.</p></div>
+    </footer>
+  </body>
+</html>
