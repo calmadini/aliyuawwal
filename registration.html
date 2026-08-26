@@ -3,88 +3,113 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Registration | Aliyu Awwal</title>
-    <meta name="description" content="Registration for Aliyu Awwal's portfolio and contact information.">
+    <title>Register with Aliyu Awwal | Enterprise Infrastructure Engineer</title>
+    <meta name="description" content="Register your interest with Aliyu Awwal for enterprise infrastructure, IT support, and operations opportunities across Germany and beyond.">
     <link rel="stylesheet" href="styles.css">
-    <script src="forms.js" defer></script>
+    <script src="scripts.js" defer></script>
+    <script src="assets/forms.js" defer></script>
   </head>
   <body>
     <header class="site-header" aria-label="Portfolio header">
       <a class="brand" href="index.html#top" aria-label="Aliyu Awwal home">
-        <img src="assets/gaminglogo.png" alt="calmadini logo">
+        <img src="assets/gaminglogo.png" alt="Aliyu Awwal logo">
         <span>Aliyu Awwal</span>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="index.html#about">About</a>
-        <a href="index.html#themes">Themes</a>
-        <a href="index.html#venue">Venue</a>
-        <a href="registration.html">Registration</a>
-        <a href="index.html#partners">Partners</a>
-      </nav>
-      <a class="header-cta" href="contact.html">Contact</a>
+
+      <div class="nav-group">
+        <nav aria-label="Primary navigation">
+          <a href="index.html#about" data-i18n="nav.about">About</a>
+          <a href="index.html#skills" data-i18n="nav.skills">Skills</a>
+          <a href="index.html#additional-skills" data-i18n="nav.additionalSkills">Additional Skills</a>
+          <a href="index.html#address" data-i18n="nav.address">Address</a>
+          <a href="registration.html" data-i18n="nav.registration">Registration</a>
+          <a href="index.html#partners" data-i18n="nav.partners">Partners</a>
+        </nav>
+        <a class="header-cta" href="contact.html" data-i18n="nav.contact">Contact</a>
+      </div>
+
+      <div class="header-controls">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="theme-toggle-label">Dark mode</span>
+        </button>
+        <label class="language-switcher-wrap" for="language-switcher" aria-label="Select language">
+          <span class="sr-only">Language</span>
+          <select id="language-switcher" class="language-switcher" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="pl">Polski</option>
+            <option value="ar">العربية</option>
+            <option value="fa">فارسی</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="pt">Português</option>
+            <option value="hi">हिन्दी</option>
+          </select>
+        </label>
+      </div>
     </header>
 
     <main>
       <section class="page-hero compact">
-        <p class="eyebrow">Registration</p>
-        <h1>Register your interest</h1>
-        <p>
+        <p class="eyebrow" data-i18n="register.kicker">Registration</p>
+        <h1 data-i18n="register.title">Register your interest</h1>
+        <p data-i18n="register.subtitle">
           Please, complete the short form below. We will follow up with further details.
         </p>
       </section>
 
       <section class="form-layout">
         <aside class="fee-panel" aria-labelledby="fees-title">
-          <p class="section-kicker">Fees</p>
-          <h2 id="fees-title">Registration fees</h2>
+          <p class="section-kicker" data-i18n="register.feesKicker">Fees</p>
+          <h2 id="fees-title" data-i18n="register.feesTitle">Registration fees</h2>
           <div class="fee-list">
            
             <div>
-              <span>Potential Employers</span>
-              <strong>0 EUR</strong>
+              <span data-i18n="register.feeEmployer">Potential Employers</span>
+              <strong data-i18n="register.feeEmployerValue">0 EUR</strong>
             </div>
              <div>
-              <span>Students and researchers</span>
-              <strong>Free</strong>
+              <span data-i18n="register.feeStudents">Students and researchers</span>
+              <strong data-i18n="register.feeStudentsValue">Free</strong>
             </div>
             <div>
-              <span>Senior professionals & Colleagues</span>
-              <strong>0 EUR</strong>
+              <span data-i18n="register.feeProfessionals">Senior professionals &amp; Colleagues</span>
+              <strong data-i18n="register.feeProfessionalsValue">0 EUR</strong>
             </div>
             <div>
-              <span>Partners & Collaborators</span>
-              <strong>0 EUR</strong>
+              <span data-i18n="register.feePartners">Partners &amp; Collaborators</span>
+              <strong data-i18n="register.feePartnersValue">0 EUR</strong>
             </div>
             <div>
-              <span>Other</span>
-              <strong>Contact for details</strong>
+              <span data-i18n="register.feeOther">Other</span>
+              <strong data-i18n="register.feeOtherValue">Contact for details</strong>
             </div>
           </div>
-          <p class="small-note">
+          <p class="small-note" data-i18n="register.feeNote">
             Fees are concise planning figures and may be confirmed by the team before payment.
           </p>
         </aside>
 
         <form class="data-form" data-form-type="registration">
           <div class="form-row">
-            <label for="fullName">Full name</label>
+            <label for="fullName" data-i18n="register.fullName">Full name</label>
             <input id="fullName" name="fullName" type="text" autocomplete="name" required>
           </div>
           <div class="form-row two-columns">
             <div>
-              <label for="email">Email</label>
+              <label for="email" data-i18n="register.email">Email</label>
               <input id="email" name="email" type="email" autocomplete="email" required>
             </div>
             <div>
-              <label for="affiliation">Affiliation/Institution/Company</label>
+              <label for="affiliation" data-i18n="register.affiliation">Affiliation/Institution/Company</label>
               <input id="affiliation" name="affiliation" type="text" required>
             </div>
           </div>
           <div class="form-row two-columns">
             <div>
-              <label for="category">Registration category</label>
+              <label for="category" data-i18n="register.category">Registration category</label>
               <select id="category" name="category" required>
-                <option value="">Select category</option>
+                <option value="" data-i18n="register.categorySelect">Select category</option>
                 <option value="Potential employer - 50 EUR">Potential employer - 0 EUR</option>
                 <option value="Student or research assistant - free">Student or research assistant - free</option>
                 <option value="Senior professional or colleague - 200 EUR">Senior professional or colleague - 0 EUR</option>
@@ -93,39 +118,39 @@
               </select>
             </div>
             <div>
-              <label for="purpose">Purpose of Registration</label>
+              <label for="purpose" data-i18n="register.purpose">Purpose of Registration</label>
               <select id="purpose" name="purpose" required>
-                <option value="">Select type</option>
-                <option>Talk</option>
-                <option>Invitation</option>
-                <option>Collaboration</option>
-                <option>Undecided</option>
+                <option value="" data-i18n="register.purposeSelect">Select type</option>
+                <option data-i18n="register.purposeTalk">Talk</option>
+                <option data-i18n="register.purposeInvitation">Invitation</option>
+                <option data-i18n="register.purposeCollaboration">Collaboration</option>
+                <option data-i18n="register.purposeUndecided">Undecided</option>
               </select>
             </div>
           </div>
           <div class="form-row">
-            <label for="title">Title of Purpose (if applicable)</label>
+            <label for="title" data-i18n="register.titlePurpose">Title of Purpose (if applicable)</label>
             <input id="title" name="title" type="text">
           </div>
           <div class="form-row two-columns">
             <div>
-              <label for="registrationFile">Invitation, Contact Information, or Proposal</label>
+              <label for="registrationFile" data-i18n="register.fileOne">Invitation, Contact Information, or Proposal</label>
               <input id="registrationFile" name="registrationFile" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx">
-              <p class="field-help">Attach your invitation, contact information, or proposal file.</p>
+              <p class="field-help" data-i18n="register.fileOneHelp">Attach your invitation, contact information, or proposal file.</p>
             </div>
             <div>
-              <label for="evidenceFile">Evidence of Job Offer/ Proposal/ Payment or Initial Contact</label>
+              <label for="evidenceFile" data-i18n="register.fileTwo">Evidence of Job Offer/ Proposal/ Payment or Initial Contact</label>
               <input id="evidenceFile" name="evidenceFile" type="file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
-              <p class="field-help">Proof of Job Offer/ Proposal/ Payment or Initial Contact.</p>
+              <p class="field-help" data-i18n="register.fileTwoHelp">Proof of Job Offer/ Proposal/ Payment or Initial Contact.</p>
             </div>
           </div>
           <div class="form-row">
-            <label for="notes">Notes</label>
-            <textarea id="notes" name="notes" rows="4" placeholder="particular needs, requirements, or questions"></textarea>
+            <label for="notes" data-i18n="register.notes">Notes</label>
+            <textarea id="notes" name="notes" rows="4" data-i18n="register.notesPlaceholder" placeholder="particular needs, requirements, or questions"></textarea>
           </div>
           <div class="form-actions">
-            <button class="button primary" type="submit">Submit registration</button>
-            <a class="button secondary" href="contact.html">Send inquiries</a>
+            <button class="button primary" type="submit" data-i18n="register.submit">Submit registration</button>
+            <a class="button secondary" href="contact.html" data-i18n="register.inquiries">Send inquiries</a>
           </div>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
@@ -135,7 +160,7 @@
     <footer class="site-footer">
       <div>
         <img src="assets/gaminglogo.png" alt="calmadini logo">
-        <p>Enterprise  Infrastructure Engineer | All-Rounder</p>
+        <p data-i18n="home.footerTitle">Enterprise  Infrastructure Engineer | All-Rounder</p>
       </div>
       <a href="mailto:aliyu.doas@gmail.com"><img src="assets/qrcodeemail.png" alt="Email QR code"></a>
       <a href="https://www.linkedin.com/in/aliyuawwal"><img src="assets/qrcodelinkedin.png" alt="LinkedIn QR code"></a>
@@ -145,5 +170,39 @@
 
       <div><p>&copy; 2026 Aliyu Awwal. All rights reserved.</p></div>
     </footer>
+    <script>
+      (function () {
+        const toggle = document.getElementById('theme-toggle');
+        if (!toggle) return;
+
+        const label = toggle.querySelector('.theme-toggle-label');
+
+        function applyTheme(isDark) {
+          document.body.classList.toggle('theme-dark', isDark);
+          toggle.setAttribute('aria-pressed', String(isDark));
+          toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+          if (label) {
+            label.textContent = isDark ? 'Light mode' : 'Dark mode';
+          }
+          try {
+            localStorage.setItem('portfolio-theme', isDark ? 'dark' : 'light');
+          } catch (error) {
+            // ignore storage issues for local file previews
+          }
+        }
+
+        try {
+          const savedTheme = localStorage.getItem('portfolio-theme');
+          const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          applyTheme(savedTheme ? savedTheme === 'dark' : prefersDark);
+        } catch (error) {
+          applyTheme(false);
+        }
+
+        toggle.addEventListener('click', function () {
+          applyTheme(!document.body.classList.contains('theme-dark'));
+        });
+      })();
+    </script>
   </body>
 </html>
